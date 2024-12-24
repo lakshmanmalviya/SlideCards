@@ -55,8 +55,8 @@ const Ayurveda: React.FC = () => {
                         <div className={styles.cardContent}>
                             <p className={styles.heading}>{title}</p>
                             {activeCard === index && buttonShowable && (
-                                <button className={styles.nextButton} onClick={handleNextClick}>
-                                    <img src="/next.png" />
+                                <button className={styles.nextButton} >
+                                    <img src="/next.png" onClick={handleNextClick}/>
                                 </button>
                             )}
                         </div>
