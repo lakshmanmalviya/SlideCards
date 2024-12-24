@@ -1,0 +1,69 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cardContainer {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 0% 12%;
+}
+
+.card {
+    flex: 1;
+    position: relative;
+    transition: flex 0.5s ease-out, transform 0.5s ease;
+    background-size: cover;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card:nth-child(1) {
+    background-image: url("/strength.jpg");
+}
+
+.card:nth-child(2) {
+    background-image: url("/mobility.jpg");
+}
+
+.card:nth-child(3) {
+    background-image: url("/drills.jpg");
+}
+
+.activeCard {
+    flex: 2;
+}
+
+.inactiveCard {
+    flex: 1;
+}
+
+.heading {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.nextButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    border: none;
+    right: 10px;
+    background: rgb(255, 255, 255);
+    color: black;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
